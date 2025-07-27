@@ -1,0 +1,12 @@
+
+/* Variables */
+
+$accent-color: #00b8fc;
+$red-color: #d62929;
+$font-family: 'Montserrat', sans-serif;
+
+/* Mixins */
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}

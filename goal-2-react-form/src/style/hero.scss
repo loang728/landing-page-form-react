@@ -1,0 +1,110 @@
+/* Hero Section */
+
+@import 'variables';
+
+section.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  padding-top: 136px;
+  gap: 45px;
+  background: #02000c url("img/hero-bgr.jpg") no-repeat center -53px / cover scroll;
+}
+
+span.main-text {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  font: normal 700 56px/56px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+span.main-text.animated {
+  opacity: 0;
+  left: 0;
+  animation: fade-down 1s 0s forwards;
+}
+h1 span.sub-title.small.animated {
+  opacity: 0;
+  -webkit-animation: fade-down 1s 0.2s forwards;
+  animation: fade-down 1s 0.2s forwards 1;
+}
+
+h1 span.sub-title.smaller.animated {
+  opacity: 0;
+  -webkit-animation: fade-down 1s 0.3s forwards;
+  animation: fade-down 1s 0.3s forwards 1;
+}
+
+.hero-text-wrapper {
+  @include flex-column;
+  gap: 40px;
+
+  .btn {
+    margin-top: 19px;
+  }
+}
+
+.description {
+  @include flex-column;
+  gap: 50px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+span.sub-title.small {
+  font: normal 300 32px/60px "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+span.sub-title.smaller {
+  display: inline-block;
+  margin-top: 16px;
+  font: normal 300 26px/36px "Montserrat", sans-serif;
+
+  strong {
+    font-weight: 700;
+    font-size: 26px;
+  }
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
+
+div.text-area {
+  padding: 20px;
+  text-align: justify;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 25px;
+  font: normal 400 21px/30px "Montserrat", sans-serif;
+}
+
+.images-list {
+  margin-top: 53px;
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+  align-items: self-end;
+}
+span.note {
+  display: block;
+  margin: 24px 0 35px 0;
+  font-weight: 300;
+  font-size: 18px;
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+    i {
+      color: $accent-color;
+    }
+  }
+}

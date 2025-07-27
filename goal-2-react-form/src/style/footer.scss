@@ -1,0 +1,111 @@
+/* FOOTER */
+span.copyright {
+  color: #2f3132;
+  font-size: 12px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  color: #000;
+  min-height: 160px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 35px;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-nav a {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.social-links {
+  margin-right: 30px;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+
+  a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px; /* hide text if any */
+  overflow: hidden;
+}
+}
+
+/* Assign background images */
+.social-facebook {
+  background-image: url("img/social-link-fb.svg");
+}
+
+.social-twitter {
+  background-image: url("img/social-link-twitter.svg");
+}
+
+.social-instagram {
+  background-image: url("img/social-link-insta.svg");
+}
+
+.social-discord {
+  background-image: url("img/social-link-discord.svg");
+}
+.social-youtube {
+  background-image: url("img/social-link-youtube.svg");
+}
+.social-facebook:hover {
+  background-image: url("img/social-link-fb-color.svg");
+}
+
+.social-twitter:hover {
+  background-image: url("img/social-link-twitter-color.svg");
+}
+
+.social-instagram:hover {
+  background-image: url("img/social-link-insta-color.svg");
+}
+
+
+
+.social-discord:hover {
+  background-image: url("img/social-link-discord-color.svg");
+}
+
+.social-youtube:hover {
+  background-image: url("img/social-link-youtube-color.svg");
+}
+.footer-info {
+  @include flex-column;
+  gap: 25px;
+}
+.footer-info li a {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+footer .container {
+  @include flex-column;
+  justify-content: center;
+  margin: auto;
+  gap: 15px;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

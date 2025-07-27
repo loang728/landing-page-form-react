@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logitech Landing Page</title>
+    <meta name="description" content="Get £30 cashback when you spend £150 or more on Logitech brands. Shop now and save on your favorite Logitech products!">
+   <link rel="stylesheet" href="style/main.css" />
+   <script src="scripts/main.js"></script>
+   <script src="scripts/form-validation.js" defer></script>
+</head>
+
+<body>
+   <div class="page-wrapper">
+      <header>
+         <nav>
+            <div class="container">
+               <div class="menu-open">
+                  <div class="burger-line"></div>
+               </div>
+               <a href="/" class="logo">
+                  <img src="assets/images/logitech-g-logo.svg" alt="Logitech Logo" loading="lazy" />
+               </a>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="hero" class="hero">
+            <div class="container">
+               <div class="hero-text-wrapper">
+                  <h1><span class="text-box main-text fade-down animated">Get £30<br>Cashback
+                     </span><br>
+                     <span class="sub-title small animated">Across Logitech
+                        Brands</span><br>
+                     <span class="sub-title smaller animated">Spend £150 or
+                        more on Logitech brands and<br><strong>claim £30
+                           cashback</strong></span>
+                  </h1>
+                  <button class="btn animated-flyfromleft registerButton">
+                     Register now</button>
+               </div>
+               <div class="claim-section-wrapper">
+                  <ul class="images-list">
+                     <li> <img src="assets/images/product-everboom.png" alt="Everboom Speaker" loading="lazy" ></li>
+                     <li><img src="assets/images/product-a20.png" alt="A20 Headset" loading="lazy" ></li>
+                     <li> <img src="assets/images/product-blue-yeti-mic.png" alt="Blue Yeti Mic" loading="lazy" ></li>
+                     <li><img src="assets/images/product-g502-x-plus.png" alt="G502 X Plus Mouse" loading="lazy" ></li>
+                  </ul>
+                  <span class="note">Claim before<span>31 <i>.</i> 03 <i>.</i> 2025</span></span>
+               </div>
+            </div>
+         </section>
+         <section class="services">
+            <div class="bgr">
+               <div class="container">
+                  <div id="services">
+                     <h2>
+                        How It Works </h2>
+                     <div class="icon-heading-text">
+                        <ul>
+                           <li>
+                              <div class="icon buy"></div>
+                              <h3>Buy</h3>
+                              <p>Purchase a qualifying Logitech product(s)
+                                 to the value of £150 or more from an
+                                 official
+                                 <strong>Logitech website</strong>
+                              </p>
+                           </li>
+                           <li>
+                              <div class="icon document"></div>
+                              <h3>Claim</h3>
+                              <p>Submit your cashback claim between
+                                 20.02.2025 - 31.03.2025</p>
+
+                           </li>
+                           <li>
+                              <div class="icon money"></div>
+                              <h3>Payday!</h3>
+                              <p>Receive your cashback within 28 days of
+                                 claim validation</p>
+
+                           </li>
+                        </ul>
+
+                     </div>
+                     <button class="btn registerButton">
+                        Register now</button>
+                  </div>
+                  <form class="cashback-form" id="cashback-form">
+                     <button id="closeFormBtn" class="close-btn" aria-label="Close Form">
+                        <!-- SVG X icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                           stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                           <line x1="18" y1="6" x2="6" y2="18" />
+                           <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                     </button>
+                     <div class="form-columns">
+
+                        <!-- Left Column -->
+                        <div class="form-column">
+                           <h2>Personal Details</h2>
+                           <label>Title
+                              <select required>
+                                 <option value>Select</option>
+                                 <option value="Mr">Mr</option>
+                                 <option value="Ms">Ms</option>
+                              </select>
+                           </label>
+                           <label>First Name <input type="text" required /></label>
+                           <label>Last Name <input type="text" required /></label>
+                           <label>Address <b>*</b><input type="text" required /></label>
+                           <label>Postcode <b>*</b><input type="text" required /></label>
+                           <label>Mobile Phone <b>*</b><input type="tel" required /></label>
+                           <label>Email Address <b>*</b><input type="email" required /></label>
+
+                           <h2>Bank Details</h2>
+                           <label>Account Type <b>*</b>
+                              <select required>
+                                 <option value>Select</option>
+                                 <option>Savings</option>
+                                 <option>Current</option>
+                              </select>
+                           </label>
+                           <label>IBAN <b>*</b><input type="text" required /></label>
+                           <label>SWIFT <b>*</b><input type="text" required /></label>
+                           <label>Beneficiary <b>*</b><input type="text" required /></label>
+                           <label class="auto-height">Enter the full name of the beneficiary of the account as per
+                              passport/identity card (without initials and title)</label>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="form-column">
+                           <h2>Product Details</h2>
+                           <label>Product Serie
+                              <select required>
+                                 <option value>Select</option>
+                              </select>
+                           </label>
+                           <label>Product <b>*</b> <select required>
+                                 <option value>Product 1</option>
+                                 <option value="Mr">Product 2</option>
+                                 <option value="Ms">Product 3</option>
+                              </select></label>
+                           <label>Serial Number <input type="text" /></label>
+                           <label>Date of Purchase <b>*</b> <input type="date" value="" required /></label>
+                           <label class="auto-height">Proof of purchase
+                              <b>*</b></label>
+                           <div class="customised-upload"><label class="custom-file-upload">Browse<input type="file"
+                                    required /> </label><span>No file
+                                 choosen <b>*</b></span></div>
+                           <label>How did you find out about this promotion?<input type="text" /></label>
+                           <label class="auto-height">What was the main reason for you to purchase a
+                              Logitech<br>product?<input type="text" /></label>
+                           <label class="auto-height">
+                              <textarea rows="10"
+                                 placeholder="11:22:33 / 01-12-2024&#10;&#10;Terms and Conditions&#10;&#10;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar convallis tincidunt. Aliquam ac congue dolor. Suspendisse nulla neque, fermentum sit amet dolor in, convallis consequat lorem. Cras quis varius odio. Nullam finibus accumsan felis, ut semper neque varius in. Aliquam ornare, mauris vitae vehicula maximus, orci eros cursus magna, eget pharetra mi ipsum quis diam. Vivamus et mattis dui. Maecenas in dui velit. Mauris ultricies pretium">
+</textarea></label>
+                           <label class="custom-checkbox">
+                              <input type="checkbox" id="agree1" required />
+                              <span class="checkmark"></span>
+                              <span><b>*</b> I declare that I have read and accept the Terms and Conditions <a
+                                    href="#">Terms
+                                    and
+                                    Conditions</a> of this promotion.</span>
+                           </label>
+                           <label class="custom-checkbox">
+                              <input type="checkbox" id="agree2" required />
+                              <span class="checkmark"></span>
+
+                              <span>Would you like to receive information about future promotions and news?<br><br>
+                                 If you would like to unsubscribe from receiving marketing material from us, please
+                                 contact us at: <a href="mailto:logitech-unsubscribe@promotion-support.com">
+                                    logitech-unsubscribe@promotion-support.com
+                                 </a></span></label>
+
+                        </div>
+                     </div>
+                     <div class="submit-row">
+                        <button class="btn smallerbtn" type="submit">Submit</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="gradient-back">
+                  <div class="glow-top-shadow-3"></div>
+                  <div class="glow-top-shadow-2"></div>
+                  <div class="glow-top-shadow"></div>
+               </div>
+               <div class="bottom-border">.</div>
+            </div>
+         </section>
+      </main>
+      <footer class="site-footer">
+         <div class="container">
+            <div class="footer-links">
+               <div class="footer-info">
+                  <ul class="footer-nav">
+                     <li><a href="#">Privacy&nbsp;Policy</a></li>
+                     <li><a href="#">Terms&nbsp;of&nbsp;Use</a></li>
+                     <li><a href="#">Cookie&nbsp;Settings</a></li>
+                  </ul>
+
+               </div>
+               <div class="footer-social">
+                  <div class="social-links">
+                     <a href="#" class="social-facebook" aria-label="Facebook"></a>
+                     <a href="#" class="social-twitter" aria-label="Twitter"></a>
+                     <a href="#" class="social-instagram" aria-label="Instagram"></a>
+                     <a href="#" class="social-youtube" aria-label="YouTube"></a>
+                     <a href="#" class="social-discord" aria-label="Discord"></a>
+                  </div>
+               </div>
+            </div>
+            <span class="copyright">© 2025 Logitech. All rights
+               reserved.</span>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
